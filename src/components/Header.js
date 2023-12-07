@@ -1,5 +1,5 @@
 // Navbar.js
-import React from 'react';
+/*import React from 'react';
 import '../style.css';
 
 const Navbar = () => {
@@ -42,4 +42,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;*/

@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './components/Header';
+//import Navbar from './components/Header';
+import Usest from './components/Usest';
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+     <Usest/>
     </div>
   );
 };
