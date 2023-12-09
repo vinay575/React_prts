@@ -1,0 +1,131 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    outline:none;
+}
+
+
+/*------*/
+
+body {
+   margin: 0;
+   display:flex;
+   min-height:100vh;
+   align-items:center;
+   justify-content:center;
+   background-color:gray ;         /*---background---*/
+  }
+
+
+.container{
+    width:400px;
+    max-width:100%;
+    overflow:hidden;
+    border-radius:8px;
+    border:1px solid gray;
+    background-color:white ;         /*---background---*/
+    backdrop-filter:blur(10px);
+}
+
+.header{
+    background-color:#f7f7f7; 
+    padding:20px 40px;
+    border-bottom:1px solid #f0f0f0;
+}
+.header h2{
+    margin: 0;
+}
+
+.form{
+    padding:30px 40px;
+}
+
+.field{
+   margin-bottom:10px;
+   padding-bottom:20px;
+   position:relative;
+}
+
+.field label{
+    display:inline-block;
+    margin-bottom:5px;
+}
+
+.field input:not(.terms){
+    display:block;
+    border-radius:4px;
+    border:1px solid gray;
+    font-size:14px;
+    width:100%;
+    padding:10px;
+}
+
+.field span{
+    position:absolute;
+    top:30px;
+    right: 10px;
+    visibility:hidden;
+}
+
+.field small{
+    position:absolute;
+    bottom:0px;
+    left: 0px;
+    visibility:hidden;
+}
+
+
+.form .button {
+    background-color:red;
+    border:1px solid black;
+    color:white;
+    display:block;
+    padding:10px;
+    width:100%;
+    font-size:16px;
+}
+
+.field .success input{
+    border-color:green;
+}
+
+
+.field .error input{
+    border-color:red;
+}
+
+.field .success span .success{
+    color:green;
+    visibility:visible;
+}
+
+.field .error span .error{
+    color:red;
+    visibility:visible;
+}
+
+.field .error span .success{
+    visibility:none;
+}
+
+.field .success span .error{
+   
+    visibility:none;
+}
+
+.field .error small{
+    visiblity:visible;
+    color:red;
+}
+
+
+ /*----------------------------------icon styles---------------------------------*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/*------*/
