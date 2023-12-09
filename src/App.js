@@ -7,6 +7,7 @@ import Usest from './components/Usest';
 const App = () => {
   return (
     <div>
+      <Navbar/>
       <Sign_up/>
     </div>
   );

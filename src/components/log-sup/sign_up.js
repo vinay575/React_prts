@@ -32,7 +32,7 @@ const Sign_up = () => {
   };
 
   return (
-    <>
+    <div className='body'>
       <div className='container'>
         <div className='header'>
           <h2>Register Here</h2>
@@ -107,7 +107,7 @@ const Sign_up = () => {
           <input type='submit' className='button' name='submit' />
         </form>
       </div>
-    </>
+    </div>
   );
 };
 
