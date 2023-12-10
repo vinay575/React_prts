@@ -20,16 +20,52 @@ const Sign_up = () => {
     e.preventDefault();
     console.log(data);
 
-    // Add your form validation and submission logic here
+  // Basic form validation
+  if (!Username.trim() || !email.trim() || !password.trim() || !ConformPassword.trim()) {
+    alert('All fields are required');
+    return;
+  }
 
-    // Reset form fields after submission
-    setData({
-      Username: '',
-      email: '',
-      password: '',
-      ConformPassword: '',
-    });
-  };
+  // Email format validation
+  if (!isValidEmail(email)) {
+    alert('Invalid email format');
+    return;
+  }
+
+  // Password strength validation (minimum 8 characters, at least one uppercase letter, one lowercase letter, and one digit)
+  if (!isValidPassword(password)) {
+    alert('Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one digit');
+    return;
+  }
+
+  // Check if passwords match
+  if (password !== ConformPassword) {
+    alert('Passwords do not match');
+    return;
+  }
+
+  // If all validations pass, you can proceed with form submission logic
+  console.log('Form submitted:', data);
+
+  // Reset form fields after successful submission
+  setData({
+    Username: '',
+    email: '',
+    password: '',
+    ConformPassword: '',
+  });
+};
+
+const isValidEmail = (email) => {
+  // Use a simple check for demonstration purposes
+  return email.includes('@') && email.includes('.');
+};
+
+// Helper function to validate password strength
+const isValidPassword = (password) => {
+  // Use a simple check for demonstration purposes
+  return password.length >= 8 && /[a-z]/.test(password) && /[A-Z]/.test(password) && /\d/.test(password);
+};
 
   return (
     <div className='body'>
@@ -48,60 +84,27 @@ const Sign_up = () => {
               onChange={changeHandler}
               id='uname'
             />
-            <span className="material-symbols-outlined success">check_circle</span>
-            <span className="material-symbols-outlined error">error</span>
-            <small>Error</small>
+           
           </div>
 
           <div className='field'>
             <label>E-mail</label>
-            <input
-              type='email'
-              placeholder='abcdefg@com'
-              name='email'
-              value={email}
-              onChange={changeHandler}
-              id='email'
-            />
-            <span className="material-symbols-outlined success">check_circle</span>
-            <span className="material-symbols-outlined error">error</span>
-            <small>Error</small>
+            <input type='email' placeholder='abcdefg@com' name='email' value={email} onChange={changeHandler} id='email' />
           </div>
 
           <div className='field'>
             <label>Password</label>
-            <input
-              type='password'
-              placeholder='password'
-              name='password'
-              value={password}
-              onChange={changeHandler}
-              id='password'
-            />
-            <span className="material-symbols-outlined success">check_circle</span>
-            <span className="material-symbols-outlined error">error</span>
-            <small>Error</small>
+            <input type='password' placeholder='password'  name='password'  value={password}  onChange={changeHandler}  id='password' /> 
           </div>
 
           <div className='field'>
             <label>Confirm Password</label>
-            <input
-              type='password'
-              placeholder='Confirm-password'
-              name='ConformPassword'
-              value={ConformPassword}
-              onChange={changeHandler}
-              id='confirmPassword'
-            />
-            <span className="material-symbols-outlined success">check_circle</span>
-            <span className="material-symbols-outlined error">error</span>
-            <small>Error</small>
+            <input type='password' placeholder='Confirm-password' name='ConformPassword' value={ConformPassword} onChange={changeHandler} id='confirmPassword'/>
           </div>
 
           <div className='field'>
             <input type='checkbox' id='tc' className='terms' />
             <label htmlFor='tc'>I Agree To Terms And Conditions</label>
-            <small>Error</small>
           </div>
 
           <input type='submit' className='button' name='submit' />
