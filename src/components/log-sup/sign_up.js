@@ -44,7 +44,7 @@ const Sign_up = () => {
     return;
   }
 
-  // If all validations pass, you can proceed with form submission logic
+  // If all validations pass, you can proceed with form submission 
   console.log('Form submitted:', data);
 
   // Reset form fields after successful submission
@@ -56,14 +56,18 @@ const Sign_up = () => {
   });
 };
 
+//to check email validation
 const isValidEmail = (email) => {
-  // Use a simple check for demonstration purposes
-  return email.includes('@') && email.includes('.');
+ return email.includes('@') && email.includes('.');
 };
 
-// Helper function to validate password strength
+//to check password validation  
+//Minimum length of 8 characters.
+//Contains at least one lowercase letter.
+//Contains at least one uppercase letter.
+//Contains at least one digit.
+// && logic and all should be true
 const isValidPassword = (password) => {
-  // Use a simple check for demonstration purposes
   return password.length >= 8 && /[a-z]/.test(password) && /[A-Z]/.test(password) && /\d/.test(password);
 };
 
@@ -76,15 +80,7 @@ const isValidPassword = (password) => {
         <form action='' className='form' id='form' onSubmit={submitHandler}>
           <div className='field'>
             <label>Username</label>
-            <input
-              type='text'
-              placeholder='Username'
-              name='Username'
-              value={Username}
-              onChange={changeHandler}
-              id='uname'
-            />
-           
+            <input type='text' placeholder='Username' name='Username' value={Username} onChange={changeHandler} id='uname' />
           </div>
 
           <div className='field'>
