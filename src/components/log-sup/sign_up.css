@@ -14,24 +14,33 @@
    min-height:100vh;
    align-items:center;
    justify-content:center;
-   background-color:gray ;         /*---background---*/
+   background-image: url("../../images/fbg.jpg");
+   background-color: #cccccc;
+   height: 500px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
   }
 
-
-.container{
-    width:400px;
-    max-width:100%;
-    overflow:hidden;
-    border-radius:8px;
-    border:1px solid gray;
-    background-color:white ;         /*---background---*/
-    backdrop-filter:blur(10px);
+  .container {
+    color:#fa0202;
+    font-weight:bold;
+    font-size: large;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid gray;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-.header{
-    background-color:#f7f7f7; 
-    padding:20px 40px;
-    border-bottom:1px solid #f0f0f0;
+.header{   
+padding:20px 100px;  
+    
 }
 .header h2{
     margin: 0;
@@ -63,7 +72,7 @@
 
 
 .form .button {
-    background-color:red;
+    background-color:#1894f2;
     border:1px solid black;
     color:white;
     display:block;
