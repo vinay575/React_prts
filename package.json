@@ -2,7 +2,7 @@
   "name": "12345",
   "version": "1.0.0",
   "description": "",
-  "source": "/src/index.html",
+  "source": "src/main/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
@@ -22,6 +22,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
     "three": "^0.159.0",
     "threejs-toys": "^0.0.8",
     "typed.js": "^2.1.0"
