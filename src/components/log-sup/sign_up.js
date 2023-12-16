@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './sign_up.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './log-sup.css'; 
+
 
 const Sign_up = () => {
   const [data, setData] = useState({
