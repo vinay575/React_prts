@@ -1,9 +1,14 @@
 // Navbar.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import '../../main/style.css';
 
 const Navbar = () => {
+  const handleLoginClick = () => {
+    // You can perform any additional actions before navigating if needed
+    console.log('Login link clicked');
+  };
+
   const handleSignUpClick = () => {
     // You can perform any additional actions before navigating if needed
     console.log('Sign-up link clicked');
@@ -29,6 +34,11 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to="/about" className="nav-link">
                 About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/login" className="nav-link" onClick={handleLoginClick}>
+                Login
               </Link>
             </li>
             <li className="nav-item">
