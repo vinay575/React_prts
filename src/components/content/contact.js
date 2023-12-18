@@ -12,10 +12,9 @@ const YourComponent = () => {
 
   return (
     <>
-      <div className="gray-block"></div>
-      
+      <div id='back'>
       <div id="tc" className="title-containe">
-        <h1 id='h1'>Contact</h1>
+        <h1 id='h1'>Contact Us</h1>
       </div>
 
       <div id="c" className="containe">
@@ -41,6 +40,7 @@ const YourComponent = () => {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

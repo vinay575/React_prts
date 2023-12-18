@@ -1,8 +1,19 @@
 
   /*--contact--*/
-
+#back{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/fbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
   #h1 {
- 
+     color:red;
     letter-spacing: 0.5px;
     font-size: 35px;
   }
@@ -70,7 +81,7 @@
       border-radius:6px;
   }
   /* containers */
-  .title-container {
+  .title-containe{
     text-align: center;
     height: 60px;
     width: 300px;
@@ -87,9 +98,16 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 90px;
+    top: 50px;
     bottom: 0;
     background-color: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid gray;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
   }
   .image-containe {
     position: absolute;
