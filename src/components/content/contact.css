@@ -1,0 +1,116 @@
+
+  /*--contact--*/
+
+  #h1 {
+ 
+    letter-spacing: 0.5px;
+    font-size: 35px;
+  }
+  
+  /* image */
+  img {
+    height: 100%;
+  }
+  /* inputs */
+  #input {
+    margin-bottom:10px;
+  }
+  textarea {
+    height:100px;
+    margin-bottom:10px;
+  }
+  #input:first-of-type
+  {
+    margin-top:35px;
+  }
+  #input, textarea {
+    font-size: 10px;
+    padding: 15px 10px 10px;
+    font-family: 'Roboto', serif;
+    border: 1px solid #cecece;
+    background: #F3F5F6;
+    color:#4c4c4c;
+    border-radius: 5px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* button */
+  .bto {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #1be3a4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    padding-left: 35px;
+    border-radius: 5px;
+    border: 1px solid #CBDFE0;
+    width: 30%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin-left: 55px;
+  }
+  .message {
+      font-family: 'Roboto', serif;
+      font-size:1.1em;
+      display:none;
+      padding-top:10px;
+      padding-bottom:10px;
+      background-color:#2ABCA7;
+      width: 80%;
+      margin:auto;
+      color: #FAFAFA;
+      -webkit-border-radius:6px;
+      -moz-border-radius:6px;
+      border-radius:6px;
+  }
+  /* containers */
+  .title-container {
+    text-align: center;
+    height: 60px;
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 130px;
+  }
+  .containe{
+    height: 350px;
+    width: 692px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+    background-color: #fff;
+  }
+  .image-containe {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+  }
+  .text-containe {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    right: 0;
+    margin: auto;
+    margin-left: 20px;
+  }
+  .gray-block {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #E3E8EB;
+  }

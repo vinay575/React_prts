@@ -5,6 +5,7 @@ import Navbar from '../components/content/Header.js';
 import About from '../components/content/about.js'; 
 import SignUp from '../components/log-sup/Sign_up'; 
 import Login from '../components/log-sup/login.js'; // Import the Login component
+import Contact from '../components/content/contact.js';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} /> 
+          <Route path="/contact" element={<Contact />} /> 
         </Routes>
       </div>
     </Router>

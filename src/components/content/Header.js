@@ -9,9 +9,15 @@ const Navbar = () => {
     console.log('Login link clicked');
   };
 
+
   const handleSignUpClick = () => {
     // You can perform any additional actions before navigating if needed
     console.log('Sign-up link clicked');
+  };
+
+const handleContactClick = () => {
+    // You can perform any additional actions before navigating if needed
+    console.log('Login link clicked');
   };
 
   return (
@@ -44,6 +50,11 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to="/sign-up" className="nav-link" onClick={handleSignUpClick}>
                 Sign-up
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link" onClick={handleContactClick}>
+                Contact
               </Link>
             </li>
           </ul>
