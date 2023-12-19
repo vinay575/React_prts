@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css';
+import Img from '../../images/fbg.jpg'
 
 const YourComponent = () => {
   const [isMessageSent, setMessageSent] = useState(false);
@@ -20,7 +21,7 @@ const YourComponent = () => {
       <div id="c" className="containe">
         
         <div className="image-containe">
-          <img src="http://res.cloudinary.com/oscartbeamish/image/upload/v1504172576/14bc155f03a9be4e10c0bd6d34067f6e_ng1urv.jpg" alt="Your Alt Text" />
+          <img id='imge' src={Img} alt="Your Alt Text" />
         </div>
 
         <div className="text-containe">
