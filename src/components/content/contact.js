@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css';
-import Img from '../../images/fbg.jpg'
+import Img from '../../images/cont.jpg'
 
 const YourComponent = () => {
   const [isMessageSent, setMessageSent] = useState(false);
