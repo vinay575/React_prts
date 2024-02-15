@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Navbar from '../components/content/Header.js';
 import About from '../components/content/about.js'; 
-import SignUp from '../components/log-sup/Sign_up'; 
+import SignUp from '../components/log-sup/sign_up.js'; 
 import Login from '../components/log-sup/login.js'; // Import the Login component
 import Contact from '../components/content/contact.js';
 

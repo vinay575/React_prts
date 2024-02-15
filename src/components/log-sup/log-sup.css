@@ -8,7 +8,7 @@
 .body {
     margin: 0;
     display: flex;
-    min-height: 100vh;
+    min-height: 120vh;
     align-items: center;
     justify-content: center;
     background-image: url("../../images/pexels.jpeg");
@@ -25,7 +25,7 @@
     font-weight: bold;
     font-size: large;
     width: 90%; /* Adjust the width as needed */
-    max-width: 400px; /* Set a maximum width */
+    max-width: 450px; /* Set a maximum width */
     overflow: hidden;
     border-radius: 8px;
     border: 2px solid gray;
@@ -76,6 +76,17 @@
     width: 100%;
     font-size: 16px;
 }
+
+.error-popup {
+    position: absolute;
+    background-color: #ffcccc;
+    color: #f00;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 1;
+  }
+  
 
 /* Additional styles for better responsiveness */
 @media (max-width: 600px) {

@@ -71,58 +71,61 @@ const Sign_up = () => {
     return password.length >= 8 && /[a-z]/.test(password) && /[A-Z]/.test(password) && /\d/.test(password);
   };
 
-  return (
-    <div className='body'>
-      <div className='container'>
-        <div className='header'>
-          <h2>Register Here</h2>
-        </div>
-        <form action='' className='form' id='form' onSubmit={submitHandler}>
-          {errors.allFields && <div className="error">{errors.allFields}</div>}
-          <div className='field'>
-            <label>Username</label>
-            <input type='text' placeholder='Username' name='Username' value={Username} onChange={changeHandler} id='uname' />
-          </div>
-          {errors.Username && <div className="error">{errors.Username}</div>}
-
-          <div className='field'>
-            <label>E-mail</label>
-            <input type='email' placeholder='abcdefg@com' name='email' value={email} onChange={changeHandler} id='email' />
-          </div>
-          {errors.email && <div className="error">{errors.email}</div>}
-
-          <div className='field'>
-            <label>Password</label>
-            <input type='password' placeholder='password'  name='password'  value={password}  onChange={changeHandler}  id='password' /> 
-          </div>
-          {errors.password && <div className="error">{errors.password}</div>}
-
-          <div className='field'>
-            <label>Confirm Password</label>
-            <input type='password' placeholder='Confirm-password' name='ConformPassword' value={ConformPassword} onChange={changeHandler} id='confirmPassword'/>
-          </div>
-          {errors.ConformPassword && <div className="error">{errors.ConformPassword}</div>}
-
-          <div className='field'>
-            <label>Phone Number</label>
-            <input type='text' placeholder='Phone Number' name='phoneNumber' value={phoneNumber} onChange={changeHandler} id='phoneNumber'/>
-          </div>
-
-          <div className='field'>
-            <label>Address</label>
-            <textarea placeholder='Address' name='address' value={address} onChange={changeHandler} id='address'></textarea>
-          </div>
-
-          <div className='field'>
-            <input type='checkbox' id='tc' className='terms' />
-            <label htmlFor='tc'>I Agree To Terms And Conditions</label>
-          </div>
-
-          <input type='submit' className='button' name='submit' />
-        </form>
+ // Inside your Sign_up component
+return (
+  <div className='body'>
+    <div className='container'>
+      <div className='header'>
+        <h2>Register Here</h2>
       </div>
+      <form action='' className='form' id='form' onSubmit={submitHandler}>
+        {errors.allFields && <div className="error">{errors.allFields}</div>}
+        <div className='field'>
+  <label>Username</label>
+  <input type='text' placeholder='Username' name='Username' value={Username} onChange={changeHandler} id='uname' />
+  {errors.Username && <div className="error-popup">{errors.Username}</div>}
+</div>
+
+<div className='field'>
+  <label>E-mail</label>
+  <input type='email' placeholder='abcdefg@com' name='email' value={email} onChange={changeHandler} id='email' />
+  {errors.email && <div className="error-popup">{errors.email}</div>}
+</div>
+
+<div className='field'>
+  <label>Password</label>
+  <input type='password' placeholder='password'  name='password'  value={password}  onChange={changeHandler}  id='password' /> 
+  {errors.password && <div className="error-popup">{errors.password}</div>}
+</div>
+
+<div className='field'>
+  <label>Confirm Password</label>
+  <input type='password' placeholder='Confirm-password' name='ConformPassword' value={ConformPassword} onChange={changeHandler} id='confirmPassword'/>
+  {errors.ConformPassword && <div className="error-popup">{errors.ConformPassword}</div>}
+</div>
+
+<div className='field'>
+  <label>Phone Number</label>
+  <input type='text' placeholder='Phone Number' name='phoneNumber' value={phoneNumber} onChange={changeHandler} id='phoneNumber'/>
+  {errors.phoneNumber && <div className="error-popup">{errors.phoneNumber}</div>}
+</div>
+
+<div className='field'>
+  <label>Address</label>
+  <textarea placeholder='Address' name='address' value={address} onChange={changeHandler} id='address'></textarea>
+  {errors.address && <div className="error-popup">{errors.address}</div>}
+</div>
+        <div className='field'>
+          <input type='checkbox' id='tc' className='terms' />
+          <label htmlFor='tc'>I Agree To Terms And Conditions</label>
+        </div>
+
+        <input type='submit' className='button' name='submit' />
+      </form>
     </div>
-  );
+  </div>
+);
+
 };
 
 export default Sign_up;
